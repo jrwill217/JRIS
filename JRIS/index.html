@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们的日常记录</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script src="./script.js"></script>
+    <header>
+        <h1>我们的日常记录</h1>
+        <p>记录每一天的点滴，为未来留下美好的回忆。</p>
+    </header>
+    <section>
+        <h2>添加新的记录</h2>
+        <form action="#" method="post">
+            <label for="date">日期</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <label>记录人：</label>
+            <input type="radio" id="JR" name="person" value="JR" required>
+            <label for="JR">JR</label>
+            <input type="radio" id="IRIS" name="person" value="IRIS">
+            <label for="IRIS">IRIS</label>
+            <br><br>
+
+<!-- 心情选择 -->
+<label for="mood">今日心情：</label>
+<select id="mood" name="mood" required>
+    <option value="">请选择</option>
+    <option value="开心">开心</option>
+    <option value="平静">平静</option>
+    <option value="忙碌">忙碌</option>
+    <option value="疲惫">疲惫</option>
+    <option value="愤怒">愤怒</option>
+</select>
+<br><br>
+
+<!-- 日常事件描述 -->
+<label for="log">日常事件记录：</label>
+<textarea id="log" name="log" rows="5" cols="30" placeholder="今天发生了什么？"></textarea>
+<br><br>
+
+<!-- 提交按钮 -->
+<input type="submit" value="保存记录">
+</form>
+</section>
+
+<!-- 日志展示区域 -->
+<section>
+<h2>日志展示</h2>
+<p>这里将显示你的日志记录（未来可通过 JavaScript 动态生成）。</p>
+</section>
+<div class="log-card">测试日志卡片</div>
+</body>
+</html>
+

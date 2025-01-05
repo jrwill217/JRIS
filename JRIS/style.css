@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #98FB98;
+    margin: 0;
+    padding: 0; /* 内边距 */
+}
+
+header {
+    background-color: #4CAF50; /* 绿色背景 */
+    color: white; /* 白色字体 */
+    padding: 1rem;
+    text-align: center;
+}
+
+section {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 800px;
+    background-color: white; /* 白色背景 */
+    border: 1px solid #ddd; /* 浅灰色边框 */
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0px 2px 5px rgba(170, 34, 34, 0.398); /* 阴影 */
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif; /* 标题使用衬线字体 */
+    color: #2C3E50; /* 深蓝色 */
+}
+
+p, label, input, select, textarea {
+    font-family: 'Arial', sans-serif; /* 正文使用无衬线字体 */
+}
+
+input, select, textarea {
+    border: 1px solid #ccc; /* 灰色边框 */
+    border-radius: 5px; /* 圆角边框 */
+    padding: 0.5rem;
+    width: calc(100% - 1rem); /* 响应式宽度 */
+    margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* 按钮颜色 */
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* 鼠标悬停效果 */
+}
+
+/* 日志展示卡片样式 */
+.log-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* 左浮动 */
+    width: calc(50% - 2rem); /* 两列布局 */
+}
